@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'montscratt' ,sans-serif;
+    
+}
+.outer{
+    display:flex;
+    flex-direction: column;
+}
+.Inner2{
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+}
+.app{
+    /* background-image: url("../assets/cloud1.jpg"); */
+    background-position: bottom;
+    background-size:auto;
+    transition:0.5 ease-out;
+}
+/* .app-warm{
+    background-image:url("../assets/cloud3.jpg");
+} */
+main{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom,rgba(87, 145, 160, 0.55),rgba(0,0,0,0.65));
+    padding:25px;
+}
+.searchBox{
+    margin:0 0 75px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+   
+}
+img{
+    width:40px;
+    height:40px;
+
+}
+.searchBox .searchBar{
+    width:100%;
+    display:block;
+    padding:15px;
+    appearance: none;
+    background:none;
+    border: none;
+    outline:none;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow:0px 5px rgba(0,0,0,0.3);
+    color:#313131;
+    font-size: 20px;
+    transition:0.2s ease
+
+}
+.searchBox .searchBar:focus
+{
+    background-color: rgba(255,255,255,.95);
+}
+.locationBox .location{
+        color:#FFF;
+        text-align:center;
+        font-size:32px;
+        font-weight: 900;
+        text-shadow: 2.5px 2.5px rgba(50,50,70,0.5);
+
+}
+.locationBox .date{
+    color: rgb(236, 222, 16);
+    text-align: center;
+    font-size: 18px;
+    font-style:italic;
+    text-shadow:2.5px 2.5px rgba(0,0,0,0.3);
+}
+.weatherBox{
+    text-align: center;
+}
+.weatherBox .temp{
+    font-size:100px;
+    color:#FFF;
+    text-shadow: 3px 5px black;
+    padding:15px 20px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius:10px;
+    font-weight:550;
+    position: relative;
+    display:inline-block;
+    margin:30px auto;
+    text-align: center;
+    box-shadow:4px 5px rgba(0,0,0,0.4)
+}
+
+.weatherBoxNext{
+    text-align: center;
+   
+}
+.weatherBoxNext .tempNext{
+    font-size:20px;
+    color:black;
+    /* text-shadow: 2px 2px black; */
+    /* padding:15px 10px; */
+    /* background-color: rgba(255,255,255,0.5); */
+    /* border-radius:10px; */
+    font-weight:bold;
+    /* position: relative; */
+
+    margin:30px auto;
+    text-align: center    ;
+    /* box-shadow:4px 5px rgba(0,0,0,0.4) */
+}
+
+.weather{
+    font-size:45px;
+    color:black;
+    font-weight:700;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+
+
+.Container {
+    width: 90%;
+    /* padding: 40px; */
+    margin: 30px auto;
+    overflow: hidden;
+    background-color:rgba(247, 246, 250, 0.7);
+    box-shadow:0px 0px 1px 1px black;
+    border-radius: 20px ;
+}
+
+.Container ul {
+
+    padding: 0px;
+    margin-left:10%;
+    margin-top:40px;    
+}
+
+
+.Container ul li {
+    list-style: none;
+    background-color: rgba(247, 246, 250, 0.9);
+    margin: 20px 20px 30px 15px;
+    height: 200px;
+    width: 15%;
+    float: left;
+    border-radius: 20px;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.6)
+}
+
+.title {
+    /* background-color: rgba(27, 25, 139, 0.8); */
+    background-color:rgb(67, 180, 214);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height:auto;
+    line-height: 1.6;
+    padding:6px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+.Container ul li .title:hover{
+    background-color:rgba(87, 86, 156, 0.8);
+    cursor: hand;
+}
+
+@media screen and (max-width:1300px) {
+    .Container ul li {
+        width: 25%;
+        margin: 20px;
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    .Container {
+        width: 60%;
+    }
+
+    .Container ul li {
+        float: none;
+        width: 80%;
+        margin-left:5px;
+        font-size: 10px;
+        
+
+    }
+}
+
