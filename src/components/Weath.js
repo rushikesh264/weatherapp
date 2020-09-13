@@ -3,10 +3,6 @@ import './Stylecss.css';
 import Cclouds from '../assets/cloudy.png'
 import Rrain from '../assets/rain.png'
 import Ssun from '../assets/sun.png'
-// import Cclear from '../assets/sky.png'
-// import Ccloudcolor from '../assets/Ccloudcolor.png'
-// import Rraincolor from '../assets/Rraincolor.png'
-// import Ssuncolor from '../assets/Ssuncolor.png'
 import Sstrom from '../assets/Sstrom.png'
 import Wwindy from '../assets/windy.png'
 import Ttemp from '../assets/temperature.png'
@@ -75,7 +71,7 @@ export default function Weath() {
        
             
         <main>
-       {console.log(weather)}
+      
             
         <div className="searchBox">
             <input className="searchBar" placeholder="Enter City Name..." type="text" onChange={(e)=>setCity(e.target.value)} onKeyPress={Search} value={City}/>
