@@ -98,7 +98,7 @@ export default function Weath() {
                                             <div className="date">{CreateDate(new Date())}</div>
                                         </div>
                                         <ul>
-                                            <li style={listyle}>{ ((weather.weather[0].main === 'Clouds')? (<img src={Cclouds} style={imgstyle}></img>):((weather.weather[0].main === 'Rain')?  (<img src={Rrain} style={imgstyle}></img>):((weather.weather[0].main === 'Storm')?(<img src={Sstrom} style={imgstyle}/>):(<img src={Ssun    } style={imgstyle}/>))))}</li>
+                                            <li style={listyle}>{ ((weather.weather[0].main === 'Clouds')? (<img src={Cclouds} alt=" " style={imgstyle}></img>):((weather.weather[0].main === 'Rain')?  (<img src={Rrain} alt=" " style={imgstyle}></img>):((weather.weather[0].main === 'Storm')?(<img src={Sstrom} alt=" " style={imgstyle}/>):(<img src={Ssun} alt=" " style={imgstyle}/>))))}</li>
                                             <li style={listyle}><img src={Ttemp} style={{width:"70px",height:"70px"}}/>   {Math.round(weather.main.temp)}&#8451;</li>
                                             <li style={listyle}>{weather.weather[0].main}</li>
                                             <li style={listyle}><img src={Wwindy} style={{width:"70px",height:"70px"}}/>  Wind-{weather.wind.speed} m/s</li>
@@ -124,7 +124,7 @@ export default function Weath() {
                                                 </div>
                                                 <div className="weatherBoxNext">
                                                     <div className="tempNext">
-                                                        { ((data.weather[0].main === 'Clouds')? (<img src={Cclouds} ></img>):((data.weather[0].main === 'Rain')?  (<img src={Rrain} ></img>):(<img src={Ssun}/>)))}
+                                                        { ((data.weather[0].main === 'Clouds')? (<img src={Cclouds} alt=" "></img>):((data.weather[0].main === 'Rain')?  (<img src={Rrain} alt=" " ></img>):(<img src={Ssun} alt=" "/>)))}
                                                         <div>{Math.round(data.main.temp)}&#8451;</div>
                                                         <div style={{fontSize:"10px"}}>Wind-{data.wind.speed} m/s</div>
                                                         <div style={{fontSize:"10px"}}>Humidity-{data.main.humidity}%</div>
